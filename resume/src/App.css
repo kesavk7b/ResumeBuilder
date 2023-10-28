@@ -1,0 +1,155 @@
+.a4Container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  height:100%;
+  width:100%;
+}
+.overFlowBreak{
+  overflow-wrap:break-word ;
+}
+.a4{
+  position:relative;
+  height: 1100px;
+  width: 845px;
+  box-shadow: 0 0 1px 1px;
+  padding: 2px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  margin: 4px;
+}
+.toolNav{
+  height: auto;
+  box-shadow: 0 0 1px 1px;
+  padding: 2px;
+  margin:5px;
+}
+.picChooseHolder,.picChooser,.imgHolder,.img{
+  height: 150px;
+  width: 120px;
+}
+.content{
+  padding:10px;
+}
+.picChooseHolder{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  background-color: rgb(228, 230, 229);
+  border: 2px solid rgb(110, 110, 110);
+  margin: 10px;
+}
+.picChooser{
+  position: absolute;
+  opacity: 0;
+  overflow: hidden;
+  z-index: 2;
+}
+.imgHolder,.img{
+  overflow: hidden;
+}
+.circleImg{
+  border-radius: 50%;
+}
+.hidden{
+  display: none;
+}
+.photoPos{
+  position: relative;
+  top: 25%;
+  bottom:25%;
+  left: 50%;
+  /* right:25%; */
+}
+.line{
+  background-color: black;
+  border: none;
+  margin: 0;
+}
+.border{
+  border: 2px solid black;
+}
+.relative{
+  position:relative;
+}
+.absolute{
+  position: absolute;
+}
+.nonePadMar{
+  padding: 0!important;
+  margin: none;
+}
+.autoWidth{
+  width: 40%;
+}
+.halfA4{
+  width: 418px;
+}
+.fullA4{
+  width: 419x;
+}
+.flex{
+  display:flex;
+}
+.tempCom{
+  height: 100px;
+  background: green;
+  border:2px solid #fff;
+}
+.jCenter{
+  justify-content: center;
+}
+.jStart{
+  justify-content: flex-start;
+}
+.jEnd{
+  justify-content: flex-end;
+}
+.alignCenter{
+  align-items: center;
+}
+.alignTop{
+  align-items: flex-start;
+}
+.alignBottom{
+  align-items: flex-start;
+}
+.addon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.myBtn{
+  border-radius: 0!important;
+  border: 1px solid rgb(21, 20, 20) !important;
+  margin-left: 1px;
+}
+.modal{
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+  border: 1px solid black;
+}
+.modalSize{
+  height: auto!important;
+  width: auto!important;
+  padding: 5px;
+}
+.modalContent{
+  padding: 2px;
+}
+
+
+
+
+[contenteditable=true]:empty:not(:focus):before{
+  content:attr(data-placeholder);
+  color:grey;
+}
+[contenteditable] {
+  outline: 0px solid transparent;
+}
