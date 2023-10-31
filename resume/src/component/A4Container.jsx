@@ -8,7 +8,7 @@ export default function A4Container({children,containerId,page=1}){
         onloadAddPage2();
     }
     return(
-        <div className="a4Container">
+        <div className="a4Container row justify-content-center">
             {children}
         </div>
     );

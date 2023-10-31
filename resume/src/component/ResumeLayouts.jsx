@@ -1,4 +1,4 @@
-export default function ResumeLayouts({children,id,col="12",classname="",flex="",bgColor="",marginB="2px"}){
+export default function ResumeLayouts({children,id,col="12",classname="",flex="",bgColor="",marginB="2px",paddingTB="0",paddingRL="0",height="",forPic=0}){
     switch(col){
         case "1":
             classname+="col-xs-1 col-sm-1 col-md-1 col-lg-1";
@@ -41,8 +41,8 @@ export default function ResumeLayouts({children,id,col="12",classname="",flex=""
     if(flex==="yes")
         flex="flex";
 return(
-        <div className={""+classname} id={"resumeLayout"+id} style={{background:bgColor,marginBottom:marginB}}>
-            <div className={flex}>
+        <div className={""+classname} id={"resumeLayout"+id} style={{marginBottom:marginB,paddingBottom:paddingTB,paddingLeft:paddingRL,paddingRight:paddingRL,background:bgColor,height:height}}>
+            <div className={flex+(forPic&&"row justify-content-center")}>
                 {children}
             </div>
         </div>

@@ -20,7 +20,7 @@ export default function Content({contentType="content",children,pos="",func}){
         const li=children.map(function(con,id){ return <li key={id}>{con}</li>});
         return(
             <>
-            <ul contentEditable={true} suppressContentEditableWarning={true} onKeyUp={(e)=>addPage(e.target)}>
+            <ul contentEditable={true} suppressContentEditableWarning={true} onKeyUp={(e)=>onContentType(e.target)}>
                 {li}
             </ul>
             </>

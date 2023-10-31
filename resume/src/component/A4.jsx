@@ -1,6 +1,6 @@
-export default function A4({children,id,paddingTB="0",paddingRL="0",bgColor=""}){
+export default function A4({children,id}){
     return(
-        <div className="a4" id={id} style={{paddingBottom:paddingTB,paddingLeft:paddingRL,paddingRight:paddingRL,background:bgColor}}>
+        <div className="a4 p0" id={id} style={{padding:"0",margin:"0",marginBottom:"5px"}}>
                 {children}
         </div>
     );

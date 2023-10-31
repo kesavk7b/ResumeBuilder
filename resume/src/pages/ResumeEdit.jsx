@@ -18,6 +18,7 @@ import TxtSize from '../component/TxtSize';
 import Tcolor from '../component/Tcolor';
 import Modal from '../component/Modal';
 import FillForm from '../component/FillForm';
+import PhotoPicker from '../component/PhotoPicker';
 
 function ResumeEdit({data}) {
    var param=useParams();
@@ -26,7 +27,7 @@ function ResumeEdit({data}) {
     var style=data[param.id];
     var page=data[param.id].page;
     const onpgContent=content.map(content=>
-      <ResumeLayouts key={content.id} col="12" id={content.id} bgColor="">
+      <ResumeLayouts key={content.id} col="12" id={content.id} >
         <Heading heading={content.heading} data-placeholder={content.placeHolder} containerId={"a4Cont"+param.tagId} func={page}/>
         <Line line={true} />
         <Content contentType={content.contentType} containerId={"a4Cont"+param.tagId} func={page}>{content.content}</Content>
@@ -46,7 +47,7 @@ function ResumeEdit({data}) {
         return(
           <LayoutContainer id={"a4container"+param.tagId}>
             {/* head */}
-            <Profile name={profile.name} obj={profile.obj} addr={profile.addr} pos={profile.namePos} func={page} />
+            <Profile name={profile.name} obj={profile.obj} addr={profile.addr} pos={profile.namePos} func={page} bgColor={style.bgColor} />
             {/* body */}
             {onpgContent}
           </LayoutContainer>
@@ -55,7 +56,8 @@ function ResumeEdit({data}) {
       if(page===2){
         return(
           <LayoutContainer>
-            <ResumeLayouts col="4">
+            <ResumeLayouts col="4" bgColor='green' paddingRL='10px' height='1100px'>
+              <PhotoPicker />
               {onpgContent1}
             </ResumeLayouts>
             <ResumeLayouts col="8">
@@ -64,7 +66,7 @@ function ResumeEdit({data}) {
         );
       }
     }
-    // var param=useParams();
+
     return(
 
       <>
@@ -80,7 +82,7 @@ function ResumeEdit({data}) {
           <DownloadBtn />
         </ToolNav>
         <A4Container containerId={"a4Cont"+param.tagId} page={page}>
-          <A4 id={"a4Cont"+param.tagId} bgColor={style.bgColor} paddingTB={style.paddingTB} paddingRL={style.paddingRL}>
+          <A4 id={"a4Cont"+param.tagId}>
             <Pg id={"a4Cont"+param.tagId}/>
           </A4>
         </A4Container>

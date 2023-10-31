@@ -198,7 +198,8 @@ export const content=[
         name:"resume4",
         id:4,
         page:2,
-        bgColor:"",
+        bgColor:"green",
+        bgColor2:"green",
         paddingTB:"10px",
         paddingRL:"10px",
         profData:{

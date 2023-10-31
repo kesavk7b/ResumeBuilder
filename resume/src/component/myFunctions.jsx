@@ -19,7 +19,21 @@ export function addPage(e){
 }
 
 export function addPage2(e){
-    console.log("hii");
+    var a4=$(e).parent().closest('div').closest('.a4');
+    let parent=$(e).parent().parent().parent();
+    while(parent.children().prop('scrollHeight')>1100){
+        var c=parent.children().children(':last-child');
+        c.remove();
+        if(parent.next().length===1){
+            parent.next().children().prepend(c);
+        }
+        else{
+            if(a4.next().length===0){
+                $('.a4Container').append(renderToString(<A4><LayoutContainer /></A4>));
+            }
+            a4.next().children().children().children(':first-child').prepend(c);
+        }
+    }
 }
 
 export function onloadAddPage1(){
@@ -49,7 +63,6 @@ export function onloadAddPage2(){
         var nextchild=true;
         var parentChild=$('.a4Container').children(':first-child');
         var child=parentChild.children().children();
-        console.log(parentChild.next());
         while(nextchild){
             nextchild=false;
             while(child.children(':first-child').children().prop('scrollHeight')>=1100){
