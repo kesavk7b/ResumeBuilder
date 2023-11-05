@@ -1,9 +1,8 @@
 import React from 'react';
 import $ from 'jquery';
 import img from '../assets/mypic.jpg';
-export default function PhotoPicker({photoPos="left"}){
+export default function PhotoPicker({picShape="",classname="",height="200px",width="200px"}){
     function setImage(input) {
-        console.log(input);
         if (input.files && input.files[0]) {
           var reader = new FileReader();
           reader.onload = function (e) {
@@ -13,10 +12,10 @@ export default function PhotoPicker({photoPos="left"}){
         }
       }
     return(
-        <div className="nonePadMar justify-content-center" style={{width:"130px"}}>
-            <div className="picChooseHolder" id="picChooseHolder">
+        <div className={"nonePadMar "+classname} style={{width:"auto"}}>
+            <div className="picChooseHolder circleImg" id="picChooseHolder">
                 <input className="picChooser" id="imageChooser" type="file" onChange={e=>setImage(e.target)} />
-                <img className="img" id="imageLocation" src={img} alt="ur img" ></img>
+                <img className={"img "+picShape} style={{height:height,width:width}} id="imageLocation" src={img} alt="ur img" ></img>
             </div>
         </div>
     );

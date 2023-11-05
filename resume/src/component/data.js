@@ -42,6 +42,96 @@ export const content=[
                 content:"welcome to great girikaalan magic show. it is a plesant surprise to i all. now this guy go inside to the box the disappear to this book and arrived from the door",
                 placeholder:"enter ur title"
             },
+            {
+                id:1,
+                heading:"skills",
+                contentType:"list",
+                content:["magic","flop","flirt"],
+                placeholder:"enter ur title"
+            },
+            {
+                id:1,
+                heading:"exprience",
+                contentType:"content",
+                content:"welcome to great girikaalan magic show. it is a plesant surprise to i all. now this guy go inside to the box the disappear to this book and arrived from the door",
+                placeholder:"enter ur title"
+            },
+          
+            {
+                id:1,
+                heading:"skills",
+                contentType:"list",
+                content:["magic","flop","flirt"],
+                placeholder:"enter ur title"
+            },
+           
+            {
+                id:1,
+                heading:"exprience",
+                contentType:"content",
+                content:"welcome to great girikaalan magic show. it is a plesant surprise to i all. now this guy go inside to the box the disappear to this book and arrived from the door",
+                placeholder:"enter ur title"
+            },
+            {
+                id:1,
+                heading:"skills",
+                contentType:"list",
+                content:["magic","flop","flirt"],
+                placeholder:"enter ur title"
+            },
+            {
+                id:1,
+                heading:"exprience",
+                contentType:"content",
+                content:"welcome to great girikaalan magic show. it is a plesant surprise to i all. now this guy go inside to the box the disappear to this book and arrived from the door",
+                placeholder:"enter ur title"
+            },
+          
+            {
+                id:1,
+                heading:"skills",
+                contentType:"list",
+                content:["magic","flop","flirt"],
+                placeholder:"enter ur title"
+            },
+           
+            {
+                id:1,
+                heading:"exprience",
+                contentType:"content",
+                content:"welcome to great girikaalan magic show. it is a plesant surprise to i all. now this guy go inside to the box the disappear to this book and arrived from the door",
+                placeholder:"enter ur title"
+            },
+            {
+                id:1,
+                heading:"skills",
+                contentType:"list",
+                content:["magic","flop","flirt"],
+                placeholder:"enter ur title"
+            },
+            {
+                id:1,
+                heading:"exprience",
+                contentType:"content",
+                content:"welcome to great girikaalan magic show. it is a plesant surprise to i all. now this guy go inside to the box the disappear to this book and arrived from the door",
+                placeholder:"enter ur title"
+            },
+          
+            {
+                id:1,
+                heading:"skills",
+                contentType:"list",
+                content:["magic","flop","flirt"],
+                placeholder:"enter ur title"
+            },
+           
+            {
+                id:1,
+                heading:"exprience",
+                contentType:"content",
+                content:"welcome to great girikaalan magic show. it is a plesant surprise to i all. now this guy go inside to the box the disappear to this book and arrived from the door",
+                placeholder:"enter ur title"
+            },
         ],
     },
 
@@ -200,12 +290,19 @@ export const content=[
         page:2,
         bgColor:"green",
         bgColor2:"green",
-        paddingTB:"10px",
-        paddingRL:"10px",
+        paddingT:"10px",
+        paddingT1:"10px",
+        paddingB:"10px",
+        paddingB1:"10px",
+        paddingR:"10px",
+        paddingR1:"10px",
+        paddingL:"20px",
+        paddingL1:"10px",
         profData:{
             name:"kesavabharathi",
             namePos:"bottom",
-            addr:["+91673862189","resume@devs.com","143,lovely street,heart-000143"]
+            addr:["+91673862189","resume@devs.com","143,lovely street,heart-000143"],
+            picShape:"circleImg",
         },
         data:[
             {
@@ -220,6 +317,17 @@ export const content=[
                 content:"welcome to great girikaalan magic show. it is a plesant surprise to i all. now this guy go inside to the box the disappear to this book and arrived from the door",
                 placeholder:"enter ur title"
             },
+         
+        ],
+        data2:[
+            {
+                heading:"skills",
+                contentType:"list",
+                content:["magic","flop","flirt"],
+                placeholder:"enter ur title"
+            },  
+           
+           
             {
                 heading:"skills",
                 contentType:"list",
@@ -227,69 +335,33 @@ export const content=[
                 placeholder:"enter ur title"
             },
             {
+                heading:"exprience",
+                contentType:"content",
+                content:"welcome to great girikaalan magic show. it is a plesant surprise to i all. now this guy go inside to the box the disappear to this book and arrived from the door",
+                placeholder:"enter ur title"
+            },
+            {
+                heading:"skills",
+                contentType:"list",
+                content:["magic","flop","flirt"],
+                placeholder:"enter ur title"
+            },  
+            {
                 heading:"skills",
                 contentType:"list",
                 content:["magic","flop","flirt"],
                 placeholder:"enter ur title"
             },
             {
+                heading:"exprience",
+                contentType:"content",
+                content:"welcome to great girikaalan magic show. it is a plesant surprise to i all. now this guy go inside to the box the disappear to this book and arrived from the door",
+                placeholder:"enter ur title"
+            },
+            {
                 heading:"skills",
                 contentType:"list",
                 content:["magic","flop","flirt"],
-                placeholder:"enter ur title"
-            },
-            {
-                heading:"exprience",
-                contentType:"content",
-                content:"welcome to great girikaalan magic show. it is a plesant surprise to i all. now this guy go inside to the box the disappear to this book and arrived from the door",
-                placeholder:"enter ur title"
-            },
-            {
-                heading:"exprience",
-                contentType:"content",
-                content:"welcome to great girikaalan magic show. it is a plesant surprise to i all. now this guy go inside to the box the disappear to this book and arrived from the door",
-                placeholder:"enter ur title"
-            },
-            {
-                heading:"exprience",
-                contentType:"content",
-                content:"welcome to great girikaalan magic show. it is a plesant surprise to i all. now this guy go inside to the box the disappear to this book and arrived from the door",
-                placeholder:"enter ur title"
-            },
-            {
-                heading:"exprience",
-                contentType:"content",
-                content:"welcome to great girikaalan magic show. it is a plesant surprise to i all. now this guy go inside to the box the disappear to this book and arrived from the door",
-                placeholder:"enter ur title"
-            },
-            {
-                heading:"exprience",
-                contentType:"content",
-                content:"welcome to great girikaalan magic show. it is a plesant surprise to i all. now this guy go inside to the box the disappear to this book and arrived from the door",
-                placeholder:"enter ur title"
-            },
-            {
-                heading:"exprience",
-                contentType:"content",
-                content:"welcome to great girikaalan magic show. it is a plesant surprise to i all. now this guy go inside to the box the disappear to this book and arrived from the door",
-                placeholder:"enter ur title"
-            },
-            {
-                heading:"exprience",
-                contentType:"content",
-                content:"welcome to great girikaalan magic show. it is a plesant surprise to i all. now this guy go inside to the box the disappear to this book and arrived from the door",
-                placeholder:"enter ur title"
-            },
-            {
-                heading:"exprience",
-                contentType:"content",
-                content:"welcome to great girikaalan magic show. it is a plesant surprise to i all. now this guy go inside to the box the disappear to this book and arrived from the door",
-                placeholder:"enter ur title"
-            },
-            {
-                heading:"exprience",
-                contentType:"content",
-                content:"welcome to great girikaalan magic show. it is a plesant surprise to i all. now this guy go inside to the box the disappear to this book and arrived from the door",
                 placeholder:"enter ur title"
             },
         ],

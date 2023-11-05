@@ -23,6 +23,7 @@ import PhotoPicker from '../component/PhotoPicker';
 function ResumeEdit({data}) {
    var param=useParams();
     var content=data[param.id].data;
+    var content2=data[param.id].data2;
     var profile=data[param.id].profData;
     var style=data[param.id];
     var page=data[param.id].page;
@@ -33,19 +34,12 @@ function ResumeEdit({data}) {
         <Content contentType={content.contentType} containerId={"a4Cont"+param.tagId} func={page}>{content.content}</Content>
       </ResumeLayouts>
       );
-      const onpgContent1=content.map(content=>
-        < div >
-          <Heading heading={content.heading} data-placeholder={content.placeHolder}  func={page} />
-          <Line line={true} />
-          <Content contentType={content.contentType} func={page} >{content.content}</Content>
-        </div>
-        );
-    function Pg({id}){
-      var param=useParams();
-      console.log(id);
-      if(page===1){
-        return(
-          <LayoutContainer id={"a4container"+param.tagId}>
+      
+      function Pg({id}){
+        var param=useParams();
+        if(page===1){
+          return(
+            <LayoutContainer id={"a4container"+param.tagId}>
             {/* head */}
             <Profile name={profile.name} obj={profile.obj} addr={profile.addr} pos={profile.namePos} func={page} bgColor={style.bgColor} />
             {/* body */}
@@ -54,13 +48,30 @@ function ResumeEdit({data}) {
         );
       }
       if(page===2){
+        const onpgContent1=content.map(content=>
+          < div >
+            <Heading heading={content.heading} data-placeholder={content.placeHolder}  func={page} />
+            <Line line={true} />
+            <Content contentType={content.contentType} func={page} >{content.content}</Content>
+          </div>
+        );
+        const onpgContent2=content2.map(content=>
+          <div>
+            <Heading heading={content.heading} data-placeholder={content.placeHolder}  func={page} />
+            <Line line={true} />
+            <Content contentType={content.contentType} func={page} >{content.content}</Content>
+          </div>
+        );
         return(
           <LayoutContainer>
-            <ResumeLayouts col="4" bgColor='green' paddingRL='10px' height='1100px'>
-              <PhotoPicker />
+            <ResumeLayouts col="4" bgColor='green' paddingL={style.paddingL} paddingR={style.paddingR} paddingT={style.paddingT} paddingB={style.paddingB} height='1100px'>
+              <ResumeLayouts col='12' forPic={1}>
+                  <PhotoPicker picShape={profile.picShape}/>
+              </ResumeLayouts>
               {onpgContent1}
             </ResumeLayouts>
-            <ResumeLayouts col="8">
+            <ResumeLayouts col="8"paddingL={style.paddingL1} paddingR={style.paddingR1} paddingT={style.paddingL1} paddingB={style.paddingL1}>
+              {onpgContent2}
             </ResumeLayouts>
           </LayoutContainer>
         );

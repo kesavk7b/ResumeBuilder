@@ -19,8 +19,8 @@
   margin:5px;
 }
 .picChooseHolder,.picChooser,.imgHolder,.img{
-  height: 150px;
-  width: 120px;
+  height: auto;
+  width: auto;
 }
 .content{
   padding:10px;
