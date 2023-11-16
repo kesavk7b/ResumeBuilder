@@ -5,11 +5,11 @@ import Content from '../component/Content';
 import Line from '../component/Line';
 export default function Profile({name="Kesavabharathi",addr=["+91673862189","resume@devs.com","143,lovely street,","heart-000143"],pos="top",email="",pic=1,obj="",func,paddingT="0",paddingR="0",paddingL="0",paddingB="0",bgColor="",picShape}){
     return (
-        <ResumeLayouts col="12" paddingT={paddingT} paddingB={paddingB} paddingL={paddingL} paddingR={paddingR} bgColor={bgColor} >
+        <ResumeLayouts col="12" paddingT={paddingT} paddingB={paddingB} paddingL={paddingL} paddingR={paddingR} bgColor={bgColor}>
             <div className='row' style={{paddingLeft:"10px",paddingRight:"10px"}}>
-            <ResumeLayouts col='8'>
+            <ResumeLayouts col='8' height="100%">
                 {
-                    pos==="top" && (<ResumeLayouts col='8'><Heading heading={name} func={func}/></ResumeLayouts>)
+                    pos==="top" && (<ResumeLayouts col='8'><Heading heading={name} func={func} classname="hello" /></ResumeLayouts>)
                 }
                 <Content func={func}>
                     {
@@ -17,7 +17,7 @@ export default function Profile({name="Kesavabharathi",addr=["+91673862189","res
                   }
                 </Content>
                 {
-                    pos==="bottom" && (<ResumeLayouts col='8'><Heading heading={name} func={func} /></ResumeLayouts>)
+                    pos==="bottom" && (<ResumeLayouts col='8'><Heading heading={name} func={func} classname="justify-content-end" /></ResumeLayouts>)
                 }
             </ResumeLayouts>
             <ResumeLayouts col='4' forPic={1}>

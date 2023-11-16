@@ -10,7 +10,6 @@ import LayoutContainer from '../component/LayoutContainer';
 import Profile from '../component/Profilelayout';
 import Content from '../component/Content';
 import React from 'react';
-// import $ from 'jquery';
 import { useParams } from 'react-router-dom';
 import A4 from '../component/A4.jsx';
 import TxtBtn from '../component/TxtBtn';
@@ -28,7 +27,7 @@ function ResumeEdit({data}) {
     var style=data[param.id];
     var page=data[param.id].page;
     const onpgContent=content.map(content=>
-      <ResumeLayouts key={content.id} col="12" id={content.id} >
+      <ResumeLayouts key={content.id} col="12" id={content.id} paddingL={style.paddingL} paddingR={style.paddingR} >
         <Heading heading={content.heading} data-placeholder={content.placeHolder} containerId={"a4Cont"+param.tagId} func={page}/>
         <Line line={true} />
         <Content contentType={content.contentType} containerId={"a4Cont"+param.tagId} func={page}>{content.content}</Content>
@@ -36,12 +35,12 @@ function ResumeEdit({data}) {
       );
       
       function Pg({id}){
-        var param=useParams();
+        // var param=useParams();
         if(page===1){
           return(
-            <LayoutContainer id={"a4container"+param.tagId}>
+            <LayoutContainer id={"a4container"+param.tagId} >
             {/* head */}
-            <Profile name={profile.name} obj={profile.obj} addr={profile.addr} pos={profile.namePos} func={page} bgColor={style.bgColor} />
+            <Profile name={profile.name} obj={profile.obj} addr={profile.addr} pos={profile.namePos} func={page} bgColor={style.bgColor} paddingT={style.paddingT} paddingB={style.paddingB} paddingL={style.paddingL} paddingR={style.paddingR} />
             {/* body */}
             {onpgContent}
           </LayoutContainer>
