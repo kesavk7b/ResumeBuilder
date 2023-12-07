@@ -136,7 +136,11 @@
   padding: 2px;
 }
 
-
+/* style */
+.horizodalList li{
+  float: left;
+  padding-right: 25px;
+}
 
 
 [contenteditable=true]:empty:not(:focus):before{

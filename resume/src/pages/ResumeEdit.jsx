@@ -30,7 +30,7 @@ function ResumeEdit({data}) {
       <ResumeLayouts key={content.id} col="12" id={content.id} paddingL={style.paddingL} paddingR={style.paddingR} >
         <Heading heading={content.heading} data-placeholder={content.placeHolder} containerId={"a4Cont"+param.tagId} func={page}/>
         <Line line={true} />
-        <Content contentType={content.contentType} containerId={"a4Cont"+param.tagId} func={page}>{content.content}</Content>
+        <Content contentType={content.contentType} containerId={"a4Cont"+param.tagId} func={page} thead={content.thead} contentClass={content.contentClass} tbody={content.tbody} content={content.content} subHeading={content.subHeading}></Content>
       </ResumeLayouts>
       );
       
